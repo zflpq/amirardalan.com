@@ -17,7 +17,7 @@ export default function Uses() {
     {
       title: 'Custom PC',
       items: [
-        { value: 'Windows 11' },
+        { value: '[Windows]' },
         { value: 'NZXT H7 Flow w/ ARCTIC P14' },
         { value: 'Intel i7-14700KF 5.6GHz' },
         { value: 'MSI PRO Z790-A MAX WIFI' },
@@ -31,7 +31,7 @@ export default function Uses() {
     {
       title: 'MacBook Pro',
       items: [
-        { value: 'macOS Tahoe' },
+        { value: '[macOS]' },
         { value: '14" / Silver' },
         { value: 'Apple M3 Pro' },
         { value: '12-core CPU / 18-core GPU' },
@@ -42,7 +42,7 @@ export default function Uses() {
     {
       title: 'ThinkPad X13 Gen 5',
       items: [
-        { value: 'Omarchy' },
+        { value: '[Linux]' },
         { value: '13"' },
         { value: 'Intel® Core™ Ultra 7 165U' },
         { value: '32GB LPDDR5X 6400MHz' },
@@ -52,7 +52,7 @@ export default function Uses() {
     {
       title: 'ThinkPad T440s',
       items: [
-        { value: 'Omarchy' },
+        { value: '[Linux]' },
         { value: '14"' },
         { value: 'Intel Core i5-4200U 2.6GHz' },
         { value: '12GB DDR3L' },
@@ -172,7 +172,7 @@ export default function Uses() {
 
   return (
     <article className="w-full text-dark dark:text-light">
-      <header>
+      <header className="border-b border-zinc-200 dark:border-zinc-800">
         <TerrainHero
           eyebrow="Toolkit / Uses"
           showTerrainCanvas={false}
@@ -217,11 +217,11 @@ export default function Uses() {
                 >
                   {section.title}
                 </h2>
-                <p className="text-xxs mt-8 font-sans tracking-[0.16em] text-zinc-500 uppercase dark:text-zinc-400">
-                  <span className="font-mono tabular-nums">
-                    {String(itemCount).padStart(2, '0')} /
+                <p className="text-xxs mt-8 font-mono tracking-[0.16em] text-zinc-500 uppercase dark:text-zinc-400">
+                  <span className="tabular-nums">
+                    {String(itemCount).padStart(2, '0')}
                   </span>{' '}
-                  Items listed
+                  Items
                 </p>
               </div>
 

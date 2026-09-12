@@ -35,7 +35,7 @@ const UsesItemCard = ({
           {items.map((item, index) => (
             <li
               key={index}
-              className="font-editorial flex py-2.5 text-sm leading-snug text-zinc-600 md:border-b md:text-base dark:border-zinc-800 dark:text-zinc-300"
+              className="font-editorial flex py-2.5 text-sm leading-snug text-zinc-600 md:border-b md:text-base md:last:border-b-0 dark:border-zinc-800 dark:text-zinc-300"
             >
               {item.label ? (
                 <span className="flex">
